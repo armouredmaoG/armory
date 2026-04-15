@@ -1,7 +1,3 @@
-// import * as THREE from 'three';
-// import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-// import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-// import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.min.js';
 import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/postprocessing/EffectComposer.js';
@@ -10,7 +6,6 @@ import { ShaderPass } from 'https://cdn.jsdelivr.net/npm/three@0.171.0/examples/
 // ─── Mobile Detection ───
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && window.innerWidth < 1025);
 
-// ─── GSAP API Hook ───
 
 //   window.CloudShaderAPI = window.CloudShaderAPI || {
 //   progress: 0.0,
