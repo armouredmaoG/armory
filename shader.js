@@ -1,8 +1,7 @@
-
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.min.js';
-import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/postprocessing/RenderPass.js';
-import { ShaderPass } from 'https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/postprocessing/ShaderPass.js';
+import * as THREE from 'https://esm.sh/three@0.171.0';
+import { EffectComposer } from 'https://esm.sh/three@0.171.0/examples/jsm/postprocessing/EffectComposer.js';
+import { RenderPass } from 'https://esm.sh/three@0.171.0/examples/jsm/postprocessing/RenderPass.js';
+import { ShaderPass } from 'https://esm.sh/three@0.171.0/examples/jsm/postprocessing/ShaderPass.js';
 // ─── Mobile Detection ───
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && window.innerWidth < 1025);
 
