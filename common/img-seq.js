@@ -232,6 +232,7 @@
                 });
 
                 this.currentFrame = index;
+                console.log(`${TAG} frame ${index}`);
 
                 window.dispatchEvent(
                     new CustomEvent("seq:frame", {
