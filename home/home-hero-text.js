@@ -48,7 +48,7 @@ function setupHeroAnimations({ frameCount, label }) {
             sel: '[dialogue="2"]',
             start: f(394),
             end: f(414),
-            out: [f(470), f(490)],
+            out: [f(430), f(446)],
         },
         {
             sel: '[dialogue="3"]',
