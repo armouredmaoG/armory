@@ -4,8 +4,8 @@
   "description": "",
   "main": "shader.js",
   "scripts": {
-    "build:scripts": "esbuild img-seq.js --minify --outdir=dist",
-    "build:module": "esbuild shader.js --minify --format=esm --bundle=false --outfile=dist/shader.js",
+    "build:scripts": "esbuild common/*.js home/*.js --minify --outdir=dist",
+    "build:module": "esbuild common/shader.js --minify --format=esm --bundle=false --outfile=dist/shader.js",
     "build": "npm run build:scripts && npm run build:module"
   },
   "keywords": [],
