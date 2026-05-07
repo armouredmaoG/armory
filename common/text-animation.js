@@ -4,7 +4,6 @@ function runIntroAnimations(blockSelector) {
     const endColor = "#ffffff";
 
     const contentBlock = document.querySelector(blockSelector);
-    console.log(contentBlock);
 
     const textSplit = contentBlock.querySelector("h1");
     const subheadingBlocks = contentBlock.querySelectorAll("[subheading]");
@@ -62,7 +61,7 @@ function runBlockAnimations(sectionSelector) {
     const section = document.querySelector(sectionSelector);
 
     const textAnimateEl = section.querySelector("[animate-block]");
-    console.log(textAnimateEl);
+
     if (!textAnimateEl) return;
 
     const textSplit = textAnimateEl.querySelector("h2");

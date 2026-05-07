@@ -57,9 +57,9 @@
         }
 
         const FRAME_COUNT = URLS_LOW.length;
-        console.log(
-            `${TAG} âœ… ${FRAME_COUNT} frames (${isMobile ? "mobile" : "desktop"})`
-        );
+        // console.log(
+        //     `${TAG} ${FRAME_COUNT} frames (${isMobile ? "mobile" : "desktop"})`
+        // );
 
         /* ---------- seq:init (script-order safe) ---------- */
         window.__seqInit = window.__seqInit || {};
@@ -166,7 +166,7 @@
                     new Set(initialFrames)
                 );
                 await this._loadBatch(remaining, "low", this.lowConcurrency);
-                console.log(`${TAG} LOW fully loaded`);
+
 
                 // Signal ready AFTER low-res is actually loaded
                 window.dispatchEvent(
@@ -184,7 +184,7 @@
                     if (URLS_HIGH.length) {
                         const highOrder = this._bsp(0, this.frameCount - 1, new Set());
                         await this._loadBatch(highOrder, "high", this.highConcurrency);
-                        console.log(`${TAG} HIGH fully loaded`);
+
                     }
                 } catch (e) {
                     console.warn(`${TAG} High-res fetch failed:`, e);
@@ -232,7 +232,7 @@
                 });
 
                 this.currentFrame = index;
-                console.log(`${TAG} frame ${index}`);
+
 
                 window.dispatchEvent(
                     new CustomEvent("seq:frame", {
@@ -245,7 +245,6 @@
 
                 const q = useHigh ? "HIGH" : "LOW";
                 if (q !== this._lastQuality) {
-                    console.log(`${TAG} ðŸŽ¨ Quality â†’ ${q} (frame ${index})`);
                     this._lastQuality = q;
                 }
             }

@@ -26,14 +26,14 @@ function setupHeroAnimations({ frameCount, label }) {
         {
             sel: "[last-dialogue]",
             to: { opacity: 1 },
-            start: f(600),
-            end: f(680),
+            start: f(510),
+            end: f(540),
         },
         {
             sel: "[product_label]",
             to: { opacity: 1 },
-            start: f(600),
-            end: f(680),
+            start: f(510),
+            end: f(540),
         },
     ];
 
@@ -46,15 +46,15 @@ function setupHeroAnimations({ frameCount, label }) {
         },
         {
             sel: '[dialogue="2"]',
-            start: f(394),
-            end: f(414),
-            out: [f(430), f(446)],
+            start: f(330),
+            end: f(350),
+            out: [f(400), f(420)],
         },
         {
             sel: '[dialogue="3"]',
-            start: f(500),
-            end: f(520),
-            out: [f(530), f(590)],
+            start: f(429),
+            end: f(440),
+            out: [f(460), f(480)],
         },
     ];
 
